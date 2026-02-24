@@ -31,8 +31,13 @@ export function Hero() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5, delay: 0.6 }}
                     >
-                        <Button variant="outline" size="lg" className="group border-foreground hover:bg-foreground hover:text-background">
-                            View the Science
+                        <Button
+                            variant="outline"
+                            size="lg"
+                            className="group border-foreground hover:bg-foreground hover:text-background"
+                            onClick={() => window.open('/coa.pdf', '_blank')}
+                        >
+                            See The Science
                             <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>
                     </motion.div>
